@@ -1,6 +1,6 @@
 # Spacedrone
 High-performance open-source scalable drone project
-[9_and_5_incg](/9_5_inch_angle_grass_1.jpg)
+<img src="https://raw.githubusercontent.com/janherich/Spacedrone/master/9_5_inch_angle_grass_1.jpg" width="800">
 
 # About Spacedrone
 ## Rationale
