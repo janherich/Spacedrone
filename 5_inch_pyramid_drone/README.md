@@ -1,5 +1,7 @@
 # Build guide
 
+<img src="https://raw.githubusercontent.com/janherich/Spacedrone/master/5_inch_pyramid_drone/img/frame_render.png" width="800">
+
 ## List of parts
 
 ### 3D Printed parts
