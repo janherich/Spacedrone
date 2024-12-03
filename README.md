@@ -16,6 +16,8 @@ heavy lifters with 3115 and bigger motors.
 * [Project folder with build instructions and 3D print files](/5_inch_pyramid_drone)
 * 40g complete frame weight with aerodynamic canopy
 * ~250g average build weight with powerful 2207/2306 motors, 230g possible with top-spec motors and titanium hardware
+* Perfect balance with bottom mounted battery, CG in the propeller plane
 * Integral cable routing in hollow 7mm round arms, no braces or additional obstructions in propeller airflow
 * Aerodynamic canopy with quick attach system housing camera, vtx and RX
+* Almost totally clean camera view with just small parts of motors in bottom corners of the viewport, despite balanced true-X config
 * Stiff frame capable of running agressive PID tunes without hot-motors/vibration problems
