@@ -102,7 +102,7 @@ Rotate the anchors in correct fashion - you can snap the canopy on frame and the
 ### Mounting frame components
 
 1, Start by mounting motors, bolt each motor to mount on arm end in such a way that wires face outside of the frame center. 
-Do not shorten the motor wires, you need at least 15cm long wires when routed internally.
+Do not shorten the motor wires, you need at least 20cm long wires when routed internally.
 Guide the wires through the hollow arm tube till you can see the wire ends in central node hole, then "fish" them out from the top hole with a help tweezers or small piece of bent wire. 
 Once you have all 3 motor wires out tie them together with a small strip of tape, so you don't mix-up wires from separate motors later, 
 when soldering them to ESC pads. 
@@ -119,12 +119,12 @@ Board needs to be flipped upside down, so that USB connector and solder pads are
 After board is fixed, solder the the motor wires to ESC pads.
 
 4. Fix the camera inside canopy with side bolts, connect it to camera wire from AIO.
-Guide the short VTX antenna with uFL connector through the antenna tube and connect it to VTX.
-Fix VTX with piece of double sided tape on canopy roof, fix RX board with double sided table inside canopy as well,
-good place is front below the camera window.
+Guide the antenna with MMCX connector through the antenna tube and connect it to VTX.
+Mount vtx with 2 M2 bolts into vtx screw-in sockets, fix RX board with double sided table inside canopy,
+good place is front below the camera window for front mounted rx antenna/s, or rear of the canopy for rear rx antenna location.
 Now you can tuck-in all connector wires inside canopy and snap canopy in place.
 
-5. Secure RX antenna with zip tie or electrical tape on one the front arms (8mm) or front perimeter tube (5mm) if you use antenna with short lead.
+5. Secure RX antenna with zip tie or electrical tape on front or rear arm (8mm).
 Secure battery leads from AIO on rear perimeter tube (5mm) with zip tie as well.
 
 ### Mounting battery
