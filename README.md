@@ -21,3 +21,13 @@ heavy lifters with 3115 and bigger motors.
 * Aerodynamic canopy with quick attach system housing camera, vtx and RX
 * Almost totally clean camera view with just small parts of motors in bottom corners of the viewport, despite balanced true-X config
 * Stiff frame capable of running agressive PID tunes without hot-motors/vibration problems
+
+## 7 inch long range cruiser
+* [Project folder with build instructions and 3D print files](/7_inch_pyramid_drone)
+* 55g complete frame weight with aerodynamic canopy
+* ~300g average build weight with efficient 2506/2604 motors, 280g possible with smaller, lower kv 2207 or similar sized motors
+* Perfect balance with bottom mounted battery, CG in the propeller plane
+* Integral cable routing in hollow 8mm round arms, no braces or additional obstructions in propeller airflow
+* Aerodynamic canopy with quick attach system housing camera, vtx and RX
+* Very clean camera view with just small parts of propellers/motors in bottom corners of the viewport, despite balanced true-X config
+* Stiff frame capable of running agressive PID tunes without hot-motors/vibration problems
