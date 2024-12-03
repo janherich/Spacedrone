@@ -41,7 +41,8 @@
 ### Assembling the frame
 
 Print all parts with suitable material, ASA, PCTG or PA12CF15 are all good choices.
-PLA/PETG are too brittle and their impact resistance is poor, so it's better to avoid them.
+PLA/PETG are brittle and their impact resistance is poor, but they are also very stiff - frame will be
+stiffest with them (especially PLA), but impact resistance will suffer.
 
 Standard print settings with 2-3walls, 20% infill and 4 top/bottom layers are good, keep cooling
 at minimum (max 40%) to achieve good layer adhesion, no supports are necessary.
