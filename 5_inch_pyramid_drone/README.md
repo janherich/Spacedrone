@@ -78,7 +78,7 @@ You will need to wait till the epoxy cures for the last step.
 3. Next, prepare the arm tubes with already mounted motor mounts (step 1) - make sure the through holes for 12mm long motor bolts are clear and bolts
 can be inserted without problems. 
 Once all bolt channels are ready, mount the bolts into motor mount, fixing them with nuts on the other side, so they don't fall out.
-Alternatively, you can already mount motors with all 4 bolts, make sure the motor wires are facing outside the frame center, exactly opposite how would you normally mount them on a classic quad frame.
+Alternatively, you can already mount motors, making sure the motor wires are facing outside the frame center, exactly opposite how would you normally mount them on a classic quad frame.
 
 Test fit by inserting arm tubes (already with attached motor mounts) through the corners and joining them together with the central top node.
 The best way do do it, is to first put 2 arm tubes through the smaller corner nodes (the ones joined by just 2 perimeter tubes, without the diagonal tube), and join them with the central node.
