@@ -129,14 +129,21 @@ Secure battery leads from AIO on rear perimeter tube (5mm) with zip tie as well.
 
 ### Mounting battery
 
-Battery is mounted below the frame and you have 2 options how to secure it.
+Battery is mounted below the frame and you have 3 options how to secure it.
 
-1. First option is to print 4 battery pads, put strips of non slippery silicone tape on them and snap them on front/back perimeter tubes (4mm).
+1. First option is to print 2 battery rails with raised edges, which snap below on front/back perimeter tubes.
+Adjust their width to fit the chosen battery, you can also tape non-slippery silicone strips on rail for better grip.
+Battery securing strip is threaded just below the diagonal tube, rails also enable you to use shorter/smaller batteries
+which can't rest on both front/back perimeter tubes.
+
+2. Second option is to print 4 battery pads, put strips of non slippery silicone tape on them and snap them on front/back perimeter tubes (4mm).
 Adjust their position according to battery width (they have raised edges to better secure battery against side to side movement)
 and secure the battery with standard battery strip running below both side perimeter tubes + diagonal tube.
+You will need to use battery which is longer then side of the perimeter square.
 
-2. Alternatively, you can just fix the non-slipper silicone tape directly on battery side and mount the battery without additional pads,
+3. Alternatively, you can just fix the non-slipper silicone tape directly on battery side and mount the battery without additional pads,
 battery will be resting directly against front/back and diagonal tubes.
+You will need to use battery which is longer then side of the perimeter square.
 
 ### Betaflight configuration
 
