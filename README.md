@@ -14,7 +14,7 @@ heavy lifters with 3115 and bigger motors.
 
 ## 5 inch racer
 * [Project folder with build instructions and 3D print files](/5_inch_pyramid_drone)
-* 40g complete frame weight with aerodynamic canopy
+* ~40g complete frame weight with aerodynamic canopy
 * ~250g average build weight with powerful 2207/2306 motors, 230g possible with top-spec motors and titanium hardware
 * Perfect balance with bottom mounted battery, CG in the propeller plane
 * Integral cable routing in hollow 7mm round arms, no braces or additional obstructions in propeller airflow
@@ -24,7 +24,7 @@ heavy lifters with 3115 and bigger motors.
 
 ## 7 inch long range cruiser
 * [Project folder with build instructions and 3D print files](/7_inch_pyramid_drone)
-* 55g complete frame weight with aerodynamic canopy
+* ~60g complete frame weight with aerodynamic canopy
 * ~300g average build weight with efficient 2506/2604 motors, 280g possible with smaller, lower kv 2207 or similar sized motors
 * Perfect balance with bottom mounted battery, CG in the propeller plane
 * Integral cable routing in hollow 8mm round arms, no braces or additional obstructions in propeller airflow
