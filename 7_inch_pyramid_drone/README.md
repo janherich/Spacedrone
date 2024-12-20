@@ -11,7 +11,7 @@
 * 2x `arm_corner_1.stl`
 * 4x `motor_mount.stl`
 * 4x `canopy_snap_on_anchor.stl`
-* (Optional) 4x `battery_pad.stl`
+* 2x `battery_rail.stl`
 
 ### Carbon tubing
 * 1x 106mm long 5x3 tube (diagonal brace)
@@ -40,9 +40,9 @@
 
 ### Assembling the frame
 
-Print all parts with suitable material, ASA, PCTG or PA12CF15 are all good choices.
-PLA/PETG are brittle and their impact resistance is poor, but they are also very stiff - frame will be
-stiffest with them (especially PLA), but impact resistance will suffer.
+Print all parts with suitable material, PETG, PC or PA12CF15 are all good choices.
+PLA is brittle and its impact resistance is poor, but it's also very stiff - frame will be
+the stiffest, but impact resistance will suffer.
 
 Standard print settings with 2-3walls, 20% infill and 4 top/bottom layers are good, keep cooling
 at minimum (max 40%) to achieve good layer adhesion, no supports are necessary.
@@ -129,21 +129,9 @@ Secure battery leads from AIO on rear perimeter tube (5mm) with zip tie as well.
 
 ### Mounting battery
 
-Battery is mounted below the frame and you have 3 options how to secure it.
-
-1. First option is to print 2 battery rails with raised edges, which snap below on front/back perimeter tubes.
+Battery is mounted below the frame in betweek 2 snap-on battery rails.
 Adjust their width to fit the chosen battery, you can also tape non-slippery silicone strips on rail for better grip.
-Battery securing strip is threaded just below the diagonal tube, rails also enable you to use shorter/smaller batteries
-which can't rest on both front/back perimeter tubes.
-
-2. Second option is to print 4 battery pads, put strips of non slippery silicone tape on them and snap them on front/back perimeter tubes (4mm).
-Adjust their position according to battery width (they have raised edges to better secure battery against side to side movement)
-and secure the battery with standard battery strip running below both side perimeter tubes + diagonal tube.
-You will need to use battery which is longer then side of the perimeter square.
-
-3. Alternatively, you can just fix the non-slipper silicone tape directly on battery side and mount the battery without additional pads,
-battery will be resting directly against front/back and diagonal tubes.
-You will need to use battery which is longer then side of the perimeter square.
+Battery securing strip is threaded just below the diagonal tube.
 
 ### Betaflight configuration
 
