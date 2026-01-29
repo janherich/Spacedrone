@@ -1,0 +1,13 @@
+{
+  "name": "spacedrone",
+  "description": "High-performance open-source scalable drone project",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it": "^14.0.0"
+  }
+}

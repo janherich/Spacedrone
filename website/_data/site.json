@@ -1,0 +1,12 @@
+{
+  "title": "Spacedrone",
+  "tagline": "High-performance open-source scalable drone project",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "5-inch racer", "url": "/5-inch/" },
+    { "label": "7-inch cruiser", "url": "/7-inch/" },
+    { "label": "Stiffness comparison", "url": "/stiffness/" }
+  ],
+  "repo": "https://github.com/janherich/Spacedrone",
+  "contact": "jan.herich@spacedelta3d.com"
+}

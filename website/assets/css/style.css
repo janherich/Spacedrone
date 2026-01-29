@@ -1,0 +1,185 @@
+/* Spacedrone site – minimal, readable */
+
+:root {
+  --bg: #0d1117;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --border: #30363d;
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+/* Main */
+.site-main {
+  padding: 2rem 0 4rem;
+}
+
+/* Rendered markdown */
+.content-from-markdown h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.content-from-markdown h2 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.75rem;
+  color: var(--fg);
+}
+
+.content-from-markdown h3 {
+  font-size: 1.0625rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.content-from-markdown p {
+  margin: 0 0 1rem;
+}
+
+.content-from-markdown ul,
+.content-from-markdown ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.content-from-markdown li {
+  margin-bottom: 0.25rem;
+}
+
+.content-from-markdown a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.content-from-markdown a:hover {
+  text-decoration: underline;
+}
+
+.content-from-markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin: 0.5rem 0 1rem;
+}
+
+.content-from-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9375rem;
+}
+
+.content-from-markdown th,
+.content-from-markdown td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.content-from-markdown th {
+  background: rgba(255, 255, 255, 0.04);
+  font-weight: 600;
+}
+
+.content-from-markdown code {
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+}
+
+.content-from-markdown pre {
+  overflow-x: auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius);
+  margin: 1rem 0;
+}
+
+.content-from-markdown pre code {
+  padding: 0;
+  background: none;
+}
+
+.content-from-markdown hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
