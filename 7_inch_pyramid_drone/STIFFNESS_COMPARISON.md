@@ -86,5 +86,3 @@ At roughly **54% less frame weight**, the 7" Spacedrone achieves:
 
 - **~7×** higher bending stiffness (top load).
 - **~1.4×** higher torsional stiffness.
-
-This supports the design goal of a lightweight, stiff frame suitable for aggressive flying and low-vibration operation without hot motors or excessive flex.
