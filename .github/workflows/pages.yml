@@ -35,7 +35,7 @@ jobs:
           ELEVENTY_PATH_PREFIX: /${{ github.event.repository.name }}
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
@@ -48,4 +48,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deploy
-        uses: actions/deploy-pages@4
+        uses: actions/deploy-pages@v4
