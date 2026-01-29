@@ -7,7 +7,7 @@ High-performance open-source scalable drone project
 
 Spacedrone aims to approach quadrocopter design from a very different angle compared to existing projects.
 It utilises efficient spaceframe structures and aerodynamic principles to create a very efficient quadcopter
-design, with lowest-in-class weight and above-average frame stiffness and aerodynamics.
+design, with lowest-in-class weight and above-average frame stiffness ([7" stiffness comparison](7_inch_pyramid_drone/STIFFNESS_COMPARISON.md)) and aerodynamics.
 
 Furthermore, it is fully parametric and scalable, covering a wide range of sizes—from small sub-250g 4–5" builds to
 heavy lifters with 3115 and bigger motors.
@@ -30,4 +30,4 @@ heavy lifters with 3115 and bigger motors.
 * Integral cable routing in hollow 8mm round arms, no braces or additional obstructions in propeller airflow
 * Aerodynamic canopy with quick attach system housing camera, vtx and RX
 * Very clean camera view with just small parts of propellers/motors in bottom corners of the viewport, despite balanced true-X config
-* Stiff frame capable of running aggressive PID tunes without hot-motors/vibration problems
+* Stiff frame capable of running aggressive PID tunes without hot-motors/vibration problems ([stiffness comparison vs standard 7" frame](7_inch_pyramid_drone/STIFFNESS_COMPARISON.md))

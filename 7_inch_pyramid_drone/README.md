@@ -2,6 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/janherich/Spacedrone/master/7_inch_pyramid_drone/img/frame_render.png" width="800">
 
+See [Stiffness comparison](STIFFNESS_COMPARISON.md) for test results vs a standard 7" frame.
+
 ## List of parts
 
 ### 3D Printed parts
