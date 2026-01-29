@@ -31,8 +31,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          ELEVENTY_PATH_PREFIX: /${{ github.event.repository.name }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
