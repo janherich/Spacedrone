@@ -22,10 +22,10 @@
 * 16x M3x20mm motor bolts
 * 4x M2x12mm flight controller mount bolts
 
-### Tools and consumabled
+### Tools and consumables
 * Structural epoxy, 30min set-time is ideal, or alternatively MMA adhesive
 * Small cut-off saw for cutting carbon tubing (hacksaw with very fine toothed blade works as well)
-* Small strip of sandpaper of flat file to scratch tube mating surfaces
+* Small strip of sandpaper or flat file to scratch tube mating surfaces
 
 ### Drone parts
 * 1x AIO board (Speedybee F405 AIO is a good choice)
@@ -34,7 +34,7 @@
 * Small VTX with 20x20 mount pattern
 * VTX Antenna with right angle MMCX connector
 * Micro sized cam (19mm camera spacing)
-* RX (Small size like HGLRC ELRS 2.4G like is a good choice)
+* RX (small size; HGLRC ELRS 2.4G is a good choice)
 
 ## Assembly instructions
 
@@ -49,10 +49,10 @@ at minimum (max 40%) to achieve good layer adhesion, no supports are necessary.
 
 Cut CFRP tubing to necessary length using cut-off saw with carbide/diamond cutting disc (fastest and cleanest method),
 or manual hacksaw with fine toothed blade. 
-Try to cut the tubes as precisely as possible, it's better to cut the tubes little bit longer and carefully shorten
-them to desired length with flat diamond file.
+Try to cut the tubes as precisely as possible, it's better to cut the tubes a little bit longer and carefully shorten
+them to the desired length with a flat diamond file.
 
-Once tubes are cut, you need to throughly scratch the mating surfaces with flat file for a good epoxy bond.
+Once tubes are cut, you need to thoroughly scratch the mating surfaces with a flat file for a good epoxy bond.
 Scratching is not necessary with raw carbon pultruded tubes, like [DPP pultruded tubes](https://www.dpp-pultrusion.com/en-NL),
 it's enough to clean and degrease them with IPA.
 
@@ -61,17 +61,17 @@ like [MD Megabond 3000](https://www.marstondomsel.de/index.php/en/product/md-meg
 impact resistance, their set-time is usually quite short and their fumes are nasty.
 
 It's easiest to divide glueing into 3 steps:
-1. First, glue motor mounts on arm tube ends - test with a dry fit before, motor mount need to fit onn tube without excessive force.
+1. First, glue motor mounts on arm tube ends—test with a dry fit before; the motor mount needs to fit on the tube without excessive force.
 Mix epoxy and apply it to the scratched/sanded end of the motor arm tube, then insert the tube into motor mount.
 Make sure the tube is inserted all the way and rotate it couple of times to distribute epoxy evenly.
-Be carefull to not clog the end of the tube with epoxy as it needs to be free for motor cable routing - remove the excess epoxy with piece of paper/towel in case some got into the tube.
+Be careful not to clog the end of the tube with epoxy, as it needs to remain clear for motor cable routing - remove the excess epoxy with piece of paper/towel in case some got into the tube.
 
 2. As a second step, assemble the central support perimeter with diagonal tube.
 Do a dry fit test before, making sure that tubes can be inserted into corner nodes easily and perimeter is square and lying flat on workbench.
 Next, mix epoxy and put it inside each support tube hole/cavity (use a wooden stick for that).
 Take 2 bigger corner nodes, mount them on diagonal tube and lay it on the workbench.
 Take one of the smaller corner pieces and put 2 perimeter tubes into holes/sockets, repeat the same process for the last corner piece.
-In the final assembly step, pull the 2 bigger corners with diagonal tube little bit apart and join it with rest of the pieces.
+In the final assembly step, pull the 2 bigger corners with the diagonal tube a little bit apart and join them with the rest of the pieces.
 Once every tube is inside corner piece socket, press all corners together with your fingers and lay it flat on workbench.
 You will need to wait till the epoxy cures for the last step.
 
@@ -81,15 +81,15 @@ Once all bolt channels are ready, mount the bolts into motor mount, fixing them 
 Alternatively, you can already mount motors, making sure the motor wires are facing outside the frame center, exactly opposite how would you normally mount them on a classic quad frame.
 
 Test fit by inserting arm tubes (already with attached motor mounts) through the corners and joining them together with the central top node.
-The best way do do it, is to first put 2 arm tubes through the smaller corner nodes (the ones joined by just 2 perimeter tubes, without the diagonal tube), and join them with the central node.
+The best way to do it is to first put 2 arm tubes through the smaller corner nodes (the ones joined by just 2 perimeter tubes, without the diagonal tube), and join them with the central node.
 You can then use the cable hole in the central node + diagonal tube below it to visually center the arm tubes - put the remaining 2 arm tubes through the bigger perimeter corners afterwards and join them in the central node as well.
 They should fit easily without excessive force and you should be able to easily rotate the arm tubes when the whole frame is assembled.
 Put the frame on flat workbench, arm ends with motor mounts should be level when they rest on motor bolt heads and frame shouldn't be twisted, all 4 arm ends should be touching the bench.
 
-Next, pull the arm tubes little bit (1-2cm) apart and remove the central node.
+Next, pull the arm tubes a little bit (1–2 cm) apart and remove the central node.
 Mix epoxy and spread it on the arm tube just outside of the perimeter corner, cover a ~10mm band on the tube with epoxy, don't put too much there, just a thin layer.
-Lift the frame (hold it by the perimeter tubes, avoid touching epoxied or to-be epoxied parts) and slowly push the arm tube you just epoxied ~2cm inside through the corner piece while rotating it at the same time, then pull it back.
-The aim is to evenly spread the epoxy inside the corner piece, repeat for the each arm-tube/corner.
+Lift the frame (hold it by the perimeter tubes; avoid touching epoxied or to-be-epoxied parts) and slowly push the arm tube you just epoxied ~2 cm inside through the corner piece while rotating it at the same time, then pull it back.
+The aim is to evenly spread the epoxy inside the corner piece, repeat for each arm-tube/corner.
 As a last step, spread epoxy on arm-tube ends (to be joined by the central top node), be careful to just spread it on the outside of the tube. Attach the central node, using the same sequence of steps as described
 above in the (dry) fit test section, rotate each arm tube 2-3 times to spread the epoxy evenly, make sure that each tube is inserted fully to the end-stop in the central node and put the frame on flat workbench.
 Make sure everything is aligned and level and wait for the epoxy to fully cure.
@@ -97,18 +97,18 @@ Make sure everything is aligned and level and wait for the epoxy to fully cure.
 ### Assembling the canopy housing
 
 Put a bit of glue (epoxy or CA) on protruding sticks of canopy anchors and insert them into canopy anchor sockets.
-Rotate the anchors in correct fashion - you can snap the canopy on frame and the anchors will align, wait for glue to set befor removing the canopy.
+Rotate the anchors in correct fashion - you can snap the canopy on frame and the anchors will align, wait for glue to set before removing the canopy.
 
 ### Mounting frame components
 
 1, Start by mounting motors, bolt each motor to mount on arm end in such a way that wires face outside of the frame center. 
 Do not shorten the motor wires, you need at least 20cm long wires when routed internally.
-Guide the wires through the hollow arm tube till you can see the wire ends in central node hole, then "fish" them out from the top hole with a help tweezers or small piece of bent wire. 
-Once you have all 3 motor wires out tie them together with a small strip of tape, so you don't mix-up wires from separate motors later, 
+Guide the wires through the hollow arm tube till you can see the wire ends in central node hole, then "fish" them out from the top hole with tweezers or a small piece of bent wire. 
+Once you have all 3 motor wires out tie them together with a small strip of tape, so you don't mix up wires from separate motors later, 
 when soldering them to ESC pads. 
-You can even color mark wire before routing them through the tube, so you can solder them in the right order and you don't have to mess-up with motor direction in firmware later.
+You can even color mark wire before routing them through the tube, so you can solder them in the right order and you don't have to mess with motor direction in firmware later.
 
-Alternative annd bit easier way is to mount motors in a standard way, with wires facing inwards, simply taped to the tube top side.
+An alternative and slightly easier way is to mount motors in a standard way, with wires facing inwards, simply taped to the tube top side.
 I think it's a shame to not take advantage of the unique internal routing capability of this frame and resulting better aesthetics & aerodynamics, but it's up to you.
 
 2. Prepare AIO board by soldering battery leads, capacitor and CAM/VTX/RX connections.
@@ -116,11 +116,11 @@ I think it's a shame to not take advantage of the unique internal routing capabi
 3. Mount AIO board by placing it between top node and diagonal bracing tube and screwing bolts (M2x12mm) directly to holes in the central node.
 Board needs to be flipped upside down, so that USB connector and solder pads are accessible.
 
-After board is fixed, solder the the motor wires to ESC pads.
+After board is fixed, solder the motor wires to ESC pads.
 
 4. Fix the camera inside canopy with side bolts, connect it to camera wire from AIO.
 Guide the antenna with MMCX connector through the antenna tube and connect it to VTX.
-Mount vtx with 2 M2 bolts into vtx screw-in sockets, fix RX board with double sided table inside canopy,
+Mount the VTX with 2 M2 bolts into the VTX screw-in sockets; fix the RX board with double-sided tape inside the canopy,
 good place is front below the camera window for front mounted rx antenna/s, or rear of the canopy for rear rx antenna location.
 Now you can tuck-in all connector wires inside canopy and snap canopy in place.
 
@@ -129,17 +129,17 @@ Secure battery leads from AIO on rear perimeter tube (5mm) with zip tie as well.
 
 ### Mounting battery
 
-Battery is mounted below the frame in betweek 2 snap-on battery rails.
-Adjust their width to fit the chosen battery, you can also tape non-slippery silicone strips on rail for better grip.
+Battery is mounted below the frame between 2 snap-on battery rails.
+Adjust their width to fit the chosen battery; you can also tape non-slip silicone strips on the rails for better grip.
 Battery securing strip is threaded just below the diagonal tube.
 
 ### Betaflight configuration
 
-Make sure to correctly adjust board/gyro position as flipped because you mounted the board upside-down, make sure to verify
+Make sure to correctly adjust board/gyro position as flipped because you mounted the board upside down, make sure to verify
 it's behaving correctly.
 Also make sure to correctly assign motors and their direction in the motors tab, especially when you didn't mark the motor wires
 when routing them internally through arm tubes.
 
 The quad flies very well on standard betaflight settings, even better with RPM filtering enabled and 7" Supafly preset.
-Due to the very low weight and low disc loading, set RPM for dynamic idle quite low (~12), otherwise low throttle management is quite difficult and quad feels very floaty
+Due to the very low weight and low disc loading, set RPM for dynamic idle quite low (~12); otherwise low-throttle management is quite difficult and the quad feels very floaty.
 
