@@ -14,13 +14,27 @@ heavy lifters with 3115 and bigger motors.
 
 ## 5-inch racer
 * [Project folder with build instructions and 3D print files](/5_inch_pyramid_drone)
-* ~40g complete frame weight with aerodynamic canopy
-* ~250g average build weight with powerful 2207/2306 motors, 230g possible with top-spec motors and titanium hardware
+* ~38g complete frame weight with aerodynamic canopy
+* Recommended for milder ~1800kv 6s motors
+* ~250g average build weight with powerful 2207/2306 motors, 230g possible with very light motors motors and titanium hardware
 * Perfect balance with bottom mounted battery, CG in the propeller plane
 * Integral cable routing in hollow 7mm round arms, no braces or additional obstructions in propeller airflow
 * Aerodynamic canopy with quick attach system housing camera, vtx and RX
 * Almost completely clean camera view with just small parts of motors in the bottom corners of the viewport, despite balanced true-X config
 * Stiff frame capable of running aggressive PID tunes without hot-motors/vibration problems
+
+## 5-inch HD racer
+* [Project folder with build instructions and 3D print files](/5_inch_hd_pyramid_drone)
+* ~48g complete frame weight with aerodynamic canopy
+* Recommended for the most powerful ~2100kv 6s motors
+* ~270g average build weight with powerful 2207/2306 motors, 260g possible with titanium hardware
+* Perfect balance with bottom mounted battery, CG in the propeller plane
+* Integral cable routing in hollow 8mm round arms, no braces or additional obstructions in propeller airflow
+* Aerodynamic canopy with quick attach system housing camera, vtx and RX
+* Almost completely clean camera view with just small parts of motors in the bottom corners of the viewport, despite balanced true-X config
+* Stiff frame capable of running aggressive PID tunes without hot-motors/vibration problems
+* Easily achieves ([240km/h+ top speed](5_inch_hd_pyramid_drone/img/flight_stats.png)) even with standard mid-pitch 5.1" tri-blades
+
 
 ## 7-inch long-range cruiser
 * [Project folder with build instructions and 3D print files](/7_inch_pyramid_drone)

@@ -12,6 +12,7 @@
 * 4x `motor_mount.stl`
 * 4x `canopy_snap_on_anchor.stl`
 * 2x `battery_rail.stl`
+* (Optional) 1x `gps_mount.stl`
 
 ### Carbon tubing
 * 1x 87.1mm long 4x2 tube (diagonal brace)
@@ -35,6 +36,7 @@
 * Short (40mm) u.FL antenna
 * Micro sized cam (19mm camera spacing)
 * RX (small size; HGLRC ELRS 2.4G is a good choice)
+* (Optional) small GPS chip (HGLRC M100 Mini GPS)
 
 ## Assembly instructions
 
@@ -142,4 +144,4 @@ when routing them internally through arm tubes.
 
 The quad flies very well on standard betaflight settings, even better with RPM filtering enabled and 5" Supafly preset.
 
-[Flight video with 5" Supafly preset](https://www.youtube.com/watch?v=JDnkSyWG7Kg)
+[Flight video with 5" Supafly preset](https://www.youtube.com/watch?v=2FE3mB3iu4Y)
