@@ -22,6 +22,8 @@ module.exports = function (eleventyConfig) {
     raw = raw.replace(/\]\(\/7_inch_pyramid_drone\)/g, `](${p}/7-inch/)`);
     raw = raw.replace(/\]\(\/5_inch_pyramid_drone\)/g, `](${p}/5-inch/)`);
     raw = raw.replace(/\]\(5_inch_pyramid_drone\/README\.md\)/g, `](${p}/5-inch/)`);
+    raw = raw.replace(/\]\(\/5_inch_hd_pyramid_drone\)/g, `](${p}/5-inch-hd/)`);
+    raw = raw.replace(/\]\(5_inch_hd_pyramid_drone\/README\.md\)/g, `](${p}/5-inch-hd/)`);
     raw = raw.replace(/\]\(STIFFNESS_COMPARISON\.md\)/g, `](${p}/stiffness/)`);
 
     let html = md.render(raw);
@@ -38,6 +40,7 @@ module.exports = function (eleventyConfig) {
   // Passthrough: copy images so they're available at same relative paths
   eleventyConfig.addPassthroughCopy("9_5_inch_angle_grass_1.jpg");
   eleventyConfig.addPassthroughCopy("5_inch_pyramid_drone/img");
+  eleventyConfig.addPassthroughCopy("5_inch_hd_pyramid_drone/img");
   eleventyConfig.addPassthroughCopy("7_inch_pyramid_drone/img");
   eleventyConfig.addPassthroughCopy("website/assets");
 
