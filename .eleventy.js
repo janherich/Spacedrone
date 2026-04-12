@@ -47,6 +47,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("5_inch_pyramid_drone/img");
   eleventyConfig.addPassthroughCopy("5_inch_pyramid_drone/video");
   eleventyConfig.addPassthroughCopy("5_inch_hd_pyramid_drone/img");
+  eleventyConfig.addPassthroughCopy("5_inch_hd_pyramid_drone/video");
   eleventyConfig.addPassthroughCopy("7_inch_pyramid_drone/img");
   eleventyConfig.addPassthroughCopy("website/assets");
 
