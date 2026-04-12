@@ -3,7 +3,23 @@ layout: base.njk
 title: 5-inch racer
 contentSource: 5_inch_pyramid_drone/README.md
 imageBase: "/5_inch_pyramid_drone"
+buildKey: 5inch
 permalink: /5-inch/
 ---
 
-{% contentFromMarkdown contentSource, imageBase %}
+<div class="drone-tabs">
+  <input type="radio" name="drone-tab" id="tab-build" checked>
+  <input type="radio" name="drone-tab" id="tab-sample">
+  <div class="tab-labels">
+    <label for="tab-build">Build Guide</label>
+    <label for="tab-sample">Sample Build</label>
+  </div>
+  <div class="tab-panels">
+    <div class="tab-panel" id="panel-build">
+      {% contentFromMarkdown contentSource, imageBase %}
+    </div>
+    <div class="tab-panel" id="panel-sample">
+      {% include "sample-build.njk" %}
+    </div>
+  </div>
+</div>

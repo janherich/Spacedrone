@@ -1,0 +1,44 @@
+{% set build = builds[buildKey] %}
+
+{% if build.photos.length > 0 %}
+<div class="carousel" aria-label="Build photos">
+  <div class="carousel-viewport">
+    <div class="carousel-track">
+      {% for photo in build.photos %}
+      <div class="carousel-slide">
+        <img src="{{ pathPrefix }}{{ imageBase }}/{{ photo }}" alt="Build photo {{ loop.index }}">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% if build.photos.length > 1 %}
+  <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+  <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+  <div class="carousel-dots">
+    {% for photo in build.photos %}
+    <button class="carousel-dot{% if loop.first %} active{% endif %}" aria-label="Go to photo {{ loop.index }}"></button>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% else %}
+<p class="build-photos-placeholder">Build photos coming soon — add images to <code>img/build/</code> and list them in <code>_data/builds.json</code>.</p>
+{% endif %}
+
+<h2>Components</h2>
+{% for group in build.components %}
+<h3>{{ group.category }}</h3>
+<table class="components-table">
+  <thead>
+    <tr><th>Component</th><th>Details</th></tr>
+  </thead>
+  <tbody>
+    {% for item in group.items %}
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>{{ item.detail }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endfor %}

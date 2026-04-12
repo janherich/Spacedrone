@@ -5,8 +5,7 @@
     { "label": "Home", "url": "/" },
     { "label": "5-inch racer", "url": "/5-inch/" },
     { "label": "5-inch HD racer", "url": "/5-inch-hd/" },
-    { "label": "7-inch cruiser", "url": "/7-inch/" },
-    { "label": "Stiffness comparison", "url": "/stiffness/" }
+    { "label": "7-inch cruiser", "url": "/7-inch/" }
   ],
   "repo": "https://github.com/janherich/Spacedrone",
   "contact": "jan.herich@spacedelta3d.com"

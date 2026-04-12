@@ -2,8 +2,30 @@
 layout: base.njk
 title: 7-inch cruiser
 contentSource: 7_inch_pyramid_drone/README.md
+stiffnessSource: 7_inch_pyramid_drone/STIFFNESS_COMPARISON.md
 imageBase: "/7_inch_pyramid_drone"
+buildKey: 7inch
 permalink: /7-inch/
 ---
 
-{% contentFromMarkdown contentSource, imageBase %}
+<div class="drone-tabs">
+  <input type="radio" name="drone-tab" id="tab-build" checked>
+  <input type="radio" name="drone-tab" id="tab-sample">
+  <input type="radio" name="drone-tab" id="tab-stiffness">
+  <div class="tab-labels">
+    <label for="tab-build">Build Guide</label>
+    <label for="tab-sample">Sample Build</label>
+    <label for="tab-stiffness">Stiffness Comparison</label>
+  </div>
+  <div class="tab-panels">
+    <div class="tab-panel" id="panel-build">
+      {% contentFromMarkdown contentSource, imageBase %}
+    </div>
+    <div class="tab-panel" id="panel-sample">
+      {% include "sample-build.njk" %}
+    </div>
+    <div class="tab-panel" id="panel-stiffness">
+      {% contentFromMarkdown stiffnessSource, imageBase %}
+    </div>
+  </div>
+</div>

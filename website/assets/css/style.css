@@ -167,6 +167,165 @@ body {
   margin: 2rem 0;
 }
 
+/* Tabs (CSS-only via hidden radio inputs) */
+.drone-tabs input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tab-labels {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.tab-labels label {
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.15s, border-color 0.15s;
+  user-select: none;
+}
+
+.tab-labels label:hover {
+  color: var(--fg);
+}
+
+.tab-panel {
+  display: none;
+}
+
+#tab-build:checked ~ .tab-labels label[for="tab-build"],
+#tab-sample:checked ~ .tab-labels label[for="tab-sample"],
+#tab-stiffness:checked ~ .tab-labels label[for="tab-stiffness"] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+#tab-build:checked ~ .tab-panels > #panel-build,
+#tab-sample:checked ~ .tab-panels > #panel-sample,
+#tab-stiffness:checked ~ .tab-panels > #panel-stiffness {
+  display: block;
+}
+
+/* Photo carousel */
+.carousel {
+  position: relative;
+  margin: 0 0 2rem;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-prev {
+  left: 0.5rem;
+}
+
+.carousel-next {
+  right: 0.5rem;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s;
+}
+
+.carousel-dot.active {
+  background: var(--accent);
+}
+
+/* Components table in sample build */
+.components-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.components-table th,
+.components-table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.components-table th {
+  background: rgba(255, 255, 255, 0.04);
+  font-weight: 600;
+}
+
+.build-photos-placeholder {
+  color: var(--muted);
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);

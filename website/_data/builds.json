@@ -1,0 +1,127 @@
+{
+  "5inch": {
+    "photos": [
+      "img/5_inch_aero_6s_petg_0.jpeg",
+      "img/5_inch_aero_6s_petg_1.jpg",
+      "img/5_inch_aero_6s_petg_2.jpg",
+      "img/5_inch_aero_6s_petg_3.jpg",
+      "img/5_inch_aero_6s_petg_4.jpg",
+      "img/5_inch_aero_6s_petg_5.jpg",
+      "img/5_inch_aero_6s_petg_6.jpg"
+    ],
+    "components": [
+      {
+        "category": "Frame",
+        "items": [
+          { "name": "3D printed parts", "detail": "Orange PETG" },
+          { "name": "Pultruded carbon tubing – 4x2mm", "detail": "1x 87.1mm diagonal, 4x 64.5mm perimeter" },
+          { "name": "Pultruded carbon tubing – 7x5mm", "detail": "4x 121mm arms" },
+          { "name": "M3x12mm motor bolts", "detail": "16x" },
+          { "name": "M2x12mm FC mount bolts", "detail": "4x" }
+        ]
+      },
+      {
+        "category": "Electronics",
+        "items": [
+          { "name": "JHEMCU F411 AIO", "detail": "Very basic cheap board" },
+          { "name": "Xing2 2207 1750kv", "detail": "Smooth, relatively mild motor" },
+          { "name": "DarwinFPV Ape VTX", "detail": "25-600mW, small form factor" },
+          { "name": "Runcam Phoenix 2 SE V2", "detail": "19mm mount spacing" },
+          { "name": "HGLRC ELRS 2.4G RX", "detail": "Small form factor" },
+          { "name": "FlyfishRC Osprey 40mm u.FL FHCP", "detail": "Cheap, adequate antenna with good gain" },
+          { "name": "Tatu R-line V5 1050mah 6S 150C", "detail": "Adequate battery, keeps AUW at ~450g" }
+        ]
+      },
+      {
+        "category": "Propellers & Accessories",
+        "items": [
+          { "name": "BMS Racing 5.1x4.3x3", "detail": "My favourite 5\" prop" },
+          { "name": "16x200mm battery strap", "detail": "For bottom-mount battery" }
+        ]
+      }
+    ]
+  },
+  "5inch_hd": {
+    "photos": [
+      "img/preflight_4.jpg",
+      "img/preflight_5.jpg",
+      "img/preflight_6.jpg",
+      "img/preflight_7.jpg",
+      "img/preflight_8.jpg"
+    ],
+    "components": [
+      {
+        "category": "Frame",
+        "items": [
+          { "name": "3D printed parts", "detail": "Translucent turquoise PETG" },
+          { "name": "Pultruded carbon tubing – 4x2mm", "detail": "1x 87.1mm diagonal, 4x 64.5mm perimeter" },
+          { "name": "Pullwinded carbon tubing – 8x6mm", "detail": "4x 120.5mm arms" },
+          { "name": "M3x16mm motor bolts", "detail": "16x" },
+          { "name": "M2x12mm FC mount bolts", "detail": "4x" }
+        ]
+      },
+      {
+        "category": "Electronics",
+        "items": [
+          { "name": "iFlight Blitz Whoop F7 AIO, 55A BLS", "detail": "Most expensive and powerful AIO board on the market" },
+          { "name": "RCinpower GTS V4 2207 2040kv", "detail": "Powerful motor" },
+          { "name": "DarwinFPV Ape VTX", "detail": "25-600mW, small form factor" },
+          { "name": "Runcam Phoenix 2 SE V2", "detail": "19mm mount spacing" },
+          { "name": "HGLRC ELRS 2.4G RX", "detail": "Small form factor" },
+          { "name": "FlyfishRC Osprey 40mm u.FL FHCP", "detail": "Cheap, adequate antenna with good gain" },
+          { "name": "Tatu R-line V6 1300mah 6S 160C", "detail": "Good battery, but 1600mah version is probably needed for full drivetrain potential" }
+        ]
+      },
+      {
+        "category": "Propellers & Accessories",
+        "items": [
+          { "name": "BMS Racing 5.1x4.3x3", "detail": "My favourite 5\" prop" },
+          { "name": "16x200mm battery strap", "detail": "For bottom-mount battery" },
+          { "name": "HGLRC M100 Mini GPS", "detail": "M10 chipset, small form factor" }
+        ]
+      }
+    ]
+  },
+  "7inch": {
+    "photos": [
+      "img/7_inch_4s_aero_petg_0.jpeg",
+      "img/7_inch_4s_aero_petg_1.jpg",
+      "img/7_inch_4s_aero_petg_2.jpg",
+      "img/7_inch_4s_aero_petg_auw_weight.jpg",
+      "img/7_inch_4s_aero_petg_weight.jpg",
+      "img/7_inch_frame_weight.jpg"
+    ],
+    "components": [
+      {
+        "category": "Frame",
+        "items": [
+          { "name": "3D printed parts", "detail": "Orange PETG" },
+          { "name": "Pultruded carbon tubing – 5x3mm", "detail": "1x 106mm diagonal, 4x 78.5mm perimeter" },
+          { "name": "Pullwinded carbon tubing – 8x6mm", "detail": "4x 147.6mm arms" },
+          { "name": "M3x20mm motor bolts", "detail": "16x" },
+          { "name": "M2x12mm FC mount bolts", "detail": "4x" }
+        ]
+      },
+      {
+        "category": "Electronics",
+        "items": [
+          { "name": "JHEMCU F411HD AIO", "detail": "Very basic cheap board" },
+          { "name": "FlyfishRC 2506 1550kv", "detail": "Very efficient on 4S with 7\" props" },
+          { "name": "SpeedyBee TX800 25-800mW VTX", "detail": "Any 20x20 mount pattern VTX will work" },
+          { "name": "Runcam Phoenix 2 SE V2", "detail": "19mm mount spacing" },
+          { "name": "Matek ELRS 2.4G True Diversity", "detail": "True Diversity is better option for long range builds" },
+          { "name": "TrueRC Singularity MMCX 90deg 90mm", "detail": "Expensive, but good quality" },
+          { "name": "Ovonics 2200mah 4S 70C", "detail": "Smaller discharge rate, but super lightweight (180g) for given capacity, keeps AUW at ~500g" },
+          { "name": "Tatu R-Line V5 1300mah 4S 150C", "detail": "Good battery for shorter spirited flights, keeps AUW at ~470g" }
+        ]
+      },
+      {
+        "category": "Propellers & Accessories",
+        "items": [
+          { "name": "Dalprop Cyclone 7x5.7x3", "detail": "My favourite 7\" prop" },
+          { "name": "16x200mm battery strap", "detail": "For bottom-mount battery" }
+        ]
+      }
+    ]
+  }
+}
