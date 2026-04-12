@@ -28,42 +28,54 @@
     </div>
   </footer>
   <script>
+  function switchTab(tabs, name) {
+    tabs.querySelectorAll(".tab-labels button").forEach(function(b) {
+      b.classList.toggle("active", b.dataset.tab === name);
+    });
+    tabs.querySelectorAll(".tab-panel").forEach(function(p) {
+      p.classList.toggle("active", p.dataset.panel === name);
+    });
+  }
   (function() {
     var hash = window.location.hash.replace("#", "");
     if (hash) {
-      var tabId = "tab-" + hash;
-      var radio = document.getElementById(tabId);
-      if (radio) radio.checked = true;
+      var tabs = document.querySelector(".drone-tabs");
+      if (tabs && tabs.querySelector('[data-tab="' + hash + '"]')) switchTab(tabs, hash);
     }
   })();
   document.addEventListener("click", function(e) {
-    var btn = e.target.closest(".carousel-btn");
-    if (!btn) return;
-    var carousel = btn.closest(".carousel");
-    var track = carousel.querySelector(".carousel-track");
-    var slides = track.children;
-    if (!slides.length) return;
-    var dots = carousel.querySelectorAll(".carousel-dot");
-    var idx = Math.round(track.scrollLeft / slides[0].offsetWidth) || 0;
-    var currentTransform = parseFloat(track.style.transform.replace("translateX(", "")) || 0;
-    var current = Math.round(Math.abs(currentTransform) / 100);
-    if (btn.classList.contains("carousel-next")) {
-      current = (current + 1) % slides.length;
-    } else {
-      current = (current - 1 + slides.length) % slides.length;
+    var btn = e.target.closest(".tab-labels button");
+    if (btn) {
+      switchTab(btn.closest(".drone-tabs"), btn.dataset.tab);
+      return;
     }
-    track.style.transform = "translateX(-" + (current * 100) + "%)";
-    dots.forEach(function(d, i) { d.classList.toggle("active", i === current); });
-  });
-  document.addEventListener("click", function(e) {
+    var carouselBtn = e.target.closest(".carousel-btn");
+    if (carouselBtn) {
+      var carousel = carouselBtn.closest(".carousel");
+      var track = carousel.querySelector(".carousel-track");
+      var slides = track.children;
+      if (!slides.length) return;
+      var dots = carousel.querySelectorAll(".carousel-dot");
+      var currentTransform = parseFloat(track.style.transform.replace("translateX(", "")) || 0;
+      var current = Math.round(Math.abs(currentTransform) / 100);
+      if (carouselBtn.classList.contains("carousel-next")) {
+        current = (current + 1) % slides.length;
+      } else {
+        current = (current - 1 + slides.length) % slides.length;
+      }
+      track.style.transform = "translateX(-" + (current * 100) + "%)";
+      dots.forEach(function(d, i) { d.classList.toggle("active", i === current); });
+      return;
+    }
     var dot = e.target.closest(".carousel-dot");
-    if (!dot) return;
-    var carousel = dot.closest(".carousel");
-    var track = carousel.querySelector(".carousel-track");
-    var dots = carousel.querySelectorAll(".carousel-dot");
-    var idx = Array.prototype.indexOf.call(dots, dot);
-    track.style.transform = "translateX(-" + (idx * 100) + "%)";
-    dots.forEach(function(d, i) { d.classList.toggle("active", i === idx); });
+    if (dot) {
+      var carousel = dot.closest(".carousel");
+      var track = carousel.querySelector(".carousel-track");
+      var dots = carousel.querySelectorAll(".carousel-dot");
+      var idx = Array.prototype.indexOf.call(dots, dot);
+      track.style.transform = "translateX(-" + (idx * 100) + "%)";
+      dots.forEach(function(d, i) { d.classList.toggle("active", i === idx); });
+    }
   });
   </script>
 </body>

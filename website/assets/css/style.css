@@ -167,13 +167,7 @@ body {
   margin: 2rem 0;
 }
 
-/* Tabs (CSS-only via hidden radio inputs) */
-.drone-tabs input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
+/* Tabs */
 .tab-labels {
   display: flex;
   gap: 0;
@@ -181,36 +175,34 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.tab-labels label {
+.tab-labels button {
   padding: 0.625rem 1.25rem;
   cursor: pointer;
   color: var(--muted);
   font-weight: 600;
   font-size: 0.9375rem;
+  border: none;
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
+  background: none;
   transition: color 0.15s, border-color 0.15s;
   user-select: none;
 }
 
-.tab-labels label:hover {
+.tab-labels button:hover {
   color: var(--fg);
+}
+
+.tab-labels button.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .tab-panel {
   display: none;
 }
 
-#tab-build:checked ~ .tab-labels label[for="tab-build"],
-#tab-sample:checked ~ .tab-labels label[for="tab-sample"],
-#tab-stiffness:checked ~ .tab-labels label[for="tab-stiffness"] {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
-}
-
-#tab-build:checked ~ .tab-panels > #panel-build,
-#tab-sample:checked ~ .tab-panels > #panel-sample,
-#tab-stiffness:checked ~ .tab-panels > #panel-stiffness {
+.tab-panel.active {
   display: block;
 }
 

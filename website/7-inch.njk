@@ -9,23 +9,18 @@ permalink: /7-inch/
 ---
 
 <div class="drone-tabs">
-  <input type="radio" name="drone-tab" id="tab-build" checked>
-  <input type="radio" name="drone-tab" id="tab-sample">
-  <input type="radio" name="drone-tab" id="tab-stiffness">
   <div class="tab-labels">
-    <label for="tab-build">Build Guide</label>
-    <label for="tab-sample">Sample Build</label>
-    <label for="tab-stiffness">Stiffness Comparison</label>
+    <button class="active" data-tab="build">Build Guide</button>
+    <button data-tab="sample">Sample Build</button>
+    <button data-tab="stiffness">Stiffness Comparison</button>
   </div>
-  <div class="tab-panels">
-    <div class="tab-panel" id="panel-build">
-      {% contentFromMarkdown contentSource, imageBase %}
-    </div>
-    <div class="tab-panel" id="panel-sample">
-      {% include "sample-build.njk" %}
-    </div>
-    <div class="tab-panel" id="panel-stiffness">
-      {% contentFromMarkdown stiffnessSource, imageBase %}
-    </div>
+  <div class="tab-panel active" data-panel="build">
+    {% contentFromMarkdown contentSource, imageBase %}
+  </div>
+  <div class="tab-panel" data-panel="sample">
+    {% include "sample-build.njk" %}
+  </div>
+  <div class="tab-panel" data-panel="stiffness">
+    {% contentFromMarkdown stiffnessSource, imageBase %}
   </div>
 </div>
