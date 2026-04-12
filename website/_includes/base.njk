@@ -46,7 +46,9 @@
   document.addEventListener("click", function(e) {
     var btn = e.target.closest(".tab-labels button");
     if (btn) {
-      switchTab(btn.closest(".drone-tabs"), btn.dataset.tab);
+      var name = btn.dataset.tab;
+      switchTab(btn.closest(".drone-tabs"), name);
+      history.replaceState(null, "", "#" + name);
       return;
     }
     var carouselBtn = e.target.closest(".carousel-btn");
