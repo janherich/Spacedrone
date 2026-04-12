@@ -144,4 +144,7 @@ when routing them internally through arm tubes.
 
 The quad flies very well on standard betaflight settings, even better with RPM filtering enabled and 5" Supafly preset.
 
-[Flight video with 5" Supafly preset](https://www.youtube.com/watch?v=2FE3mB3iu4Y)
+<video controls width="100%" preload="metadata">
+  <source src="video/spirited_flying.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

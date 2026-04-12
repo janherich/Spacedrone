@@ -2,6 +2,11 @@
 High-performance open-source scalable drone project
 <img src="https://raw.githubusercontent.com/janherich/Spacedrone/master/9_5_inch_angle_grass_1.jpg" width="800">
 
+<video controls width="100%" preload="metadata">
+  <source src="/5_inch_pyramid_drone/video/spirited_flying.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 # About Spacedrone
 ## Rationale
 

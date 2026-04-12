@@ -28,10 +28,15 @@ module.exports = function (eleventyConfig) {
 
     let html = md.render(raw);
 
-    // Rewrite relative image src to use pathPrefix + imageBase so they resolve on the site
+    // Rewrite relative image/video src to use pathPrefix + imageBase so they resolve on the site
     if (imageBase && imageBase !== "/") {
       const base = pathPrefix + imageBase.replace(/\/$/, "");
-      html = html.replace(/src="(img\/[^"]+)"/g, `src="${base}/$1"`);
+      html = html.replace(/src="((img|video)\/[^"]+)"/g, `src="${base}/$1"`);
+    }
+
+    // Prepend pathPrefix to absolute src paths (e.g. /5_inch_pyramid_drone/video/...)
+    if (p) {
+      html = html.replace(/src="(\/(?!\/)[^"]+)"/g, `src="${p}$1"`);
     }
 
     return html;
@@ -40,6 +45,7 @@ module.exports = function (eleventyConfig) {
   // Passthrough: copy images so they're available at same relative paths
   eleventyConfig.addPassthroughCopy("9_5_inch_angle_grass_1.jpg");
   eleventyConfig.addPassthroughCopy("5_inch_pyramid_drone/img");
+  eleventyConfig.addPassthroughCopy("5_inch_pyramid_drone/video");
   eleventyConfig.addPassthroughCopy("5_inch_hd_pyramid_drone/img");
   eleventyConfig.addPassthroughCopy("7_inch_pyramid_drone/img");
   eleventyConfig.addPassthroughCopy("website/assets");
