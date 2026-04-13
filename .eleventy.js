@@ -31,13 +31,13 @@ module.exports = function (eleventyConfig) {
 
     // Rewrite internal doc links to website paths (include pathPrefix for GitHub Pages subpath)
     const p = pathPrefix;
-    raw = raw.replace(/\]\(7_inch_pyramid_drone\/STIFFNESS_COMPARISON\.md\)/g, `](${p}/7-inch/#stiffness)`);
+    raw = raw.replace(/\]\(7_inch_pyramid_drone\/STIFFNESS_COMPARISON\.md\)/g, `](${p}/7-inch/stiffness/)`);
     raw = raw.replace(/\]\(\/7_inch_pyramid_drone\)/g, `](${p}/7-inch/)`);
     raw = raw.replace(/\]\(\/5_inch_pyramid_drone\)/g, `](${p}/5-inch/)`);
-    raw = raw.replace(/\]\(5_inch_pyramid_drone\/README\.md\)/g, `](${p}/5-inch/)`);
+    raw = raw.replace(/\]\(5_inch_pyramid_drone\/README\.md\)/g, `](${p}/5-inch/build-guide/)`);
     raw = raw.replace(/\]\(\/5_inch_hd_pyramid_drone\)/g, `](${p}/5-inch-hd/)`);
-    raw = raw.replace(/\]\(5_inch_hd_pyramid_drone\/README\.md\)/g, `](${p}/5-inch-hd/)`);
-    raw = raw.replace(/\]\(STIFFNESS_COMPARISON\.md\)/g, `](${p}/7-inch/#stiffness)`);
+    raw = raw.replace(/\]\(5_inch_hd_pyramid_drone\/README\.md\)/g, `](${p}/5-inch-hd/build-guide/)`);
+    raw = raw.replace(/\]\(STIFFNESS_COMPARISON\.md\)/g, `](${p}/7-inch/stiffness/)`);
 
     let html = md.render(raw);
 

@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: 7-inch cruiser
+imageBase: "/7_inch_pyramid_drone"
+buildKey: 7inch
+permalink: /7-inch/
+---
+
+<div class="drone-tabs">
+{% set droneTabBase = "/7-inch/" %}
+{% set activeTab = "sample" %}
+{% set droneTabsStiffness = true %}
+{% include "drone-tabs.njk" %}
+{% include "sample-build.njk" %}
+</div>

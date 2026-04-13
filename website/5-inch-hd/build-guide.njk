@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: 5-inch HD racer
+contentSource: 5_inch_hd_pyramid_drone/README.md
+imageBase: "/5_inch_hd_pyramid_drone"
+permalink: /5-inch-hd/build-guide/
+---
+
+<div class="drone-tabs">
+{% set droneTabBase = "/5-inch-hd/" %}
+{% set activeTab = "build" %}
+{% set droneTabsStiffness = false %}
+{% include "drone-tabs.njk" %}
+{% contentFromMarkdown contentSource, imageBase %}
+</div>

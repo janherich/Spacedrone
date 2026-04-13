@@ -175,7 +175,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.tab-labels button {
+.tab-labels a {
   padding: 0.625rem 1.25rem;
   cursor: pointer;
   color: var(--muted);
@@ -187,23 +187,17 @@ body {
   background: none;
   transition: color 0.15s, border-color 0.15s;
   user-select: none;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.tab-labels button:hover {
+.tab-labels a:hover {
   color: var(--fg);
 }
 
-.tab-labels button.active {
+.tab-labels a.active {
   color: var(--accent);
   border-bottom-color: var(--accent);
-}
-
-.tab-panel {
-  display: none;
-}
-
-.tab-panel.active {
-  display: block;
 }
 
 /* Photo carousel — fixed frame so layout below doesn’t jump when slides differ in aspect ratio */

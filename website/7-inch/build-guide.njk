@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: 7-inch cruiser
+contentSource: 7_inch_pyramid_drone/README.md
+imageBase: "/7_inch_pyramid_drone"
+permalink: /7-inch/build-guide/
+---
+
+<div class="drone-tabs">
+{% set droneTabBase = "/7-inch/" %}
+{% set activeTab = "build" %}
+{% set droneTabsStiffness = true %}
+{% include "drone-tabs.njk" %}
+{% contentFromMarkdown contentSource, imageBase %}
+</div>

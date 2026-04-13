@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: 7-inch cruiser
+stiffnessSource: 7_inch_pyramid_drone/STIFFNESS_COMPARISON.md
+imageBase: "/7_inch_pyramid_drone"
+permalink: /7-inch/stiffness/
+---
+
+<div class="drone-tabs">
+{% set droneTabBase = "/7-inch/" %}
+{% set activeTab = "stiffness" %}
+{% set droneTabsStiffness = true %}
+{% include "drone-tabs.njk" %}
+{% contentFromMarkdown stiffnessSource, imageBase %}
+</div>

@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: 5-inch racer
+imageBase: "/5_inch_pyramid_drone"
+buildKey: 5inch
+permalink: /5-inch/
+---
+
+<div class="drone-tabs">
+{% set droneTabBase = "/5-inch/" %}
+{% set activeTab = "sample" %}
+{% set droneTabsStiffness = false %}
+{% include "drone-tabs.njk" %}
+{% include "sample-build.njk" %}
+</div>

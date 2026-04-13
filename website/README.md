@@ -34,5 +34,5 @@ In **Settings → Pages**, set your custom domain. GitHub will show DNS instruct
 
 - **Content**: Pulled from `README.md`, `5_inch_pyramid_drone/README.md`, `5_inch_hd_pyramid_drone/README.md`, `7_inch_pyramid_drone/README.md`, `7_inch_pyramid_drone/STIFFNESS_COMPARISON.md` via the `contentFromMarkdown` shortcode. Do not duplicate that content in the website folder.
 - **Layout & data**: `_includes/base.njk`, `_data/site.json` (nav, title, repo link).
-- **Pages**: `index.njk`, `5-inch.njk`, `5-inch-hd.njk`, `7-inch.njk`, `stiffness.njk` — each specifies which markdown file to render and the image base path.
+- **Pages**: `index.njk`, and per-drone folders (`5-inch/`, `5-inch-hd/`, `7-inch/`) with `index.njk` (sample build), `build-guide.njk` (README), and for 7-inch `stiffness.njk` — each sets front matter for markdown, image base, and `buildKey` where needed.
 - **Styling**: `assets/css/style.css` (edit freely).

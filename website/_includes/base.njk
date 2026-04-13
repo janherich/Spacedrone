@@ -16,6 +16,7 @@
     gtag("config", "{{ site.analytics.googleAnalyticsId }}");
   </script>
   {% endif %}
+  <script>window.__PATH_PREFIX__ = {{ pathPrefix | dump | safe }};</script>
 </head>
 <body>
   <header class="site-header">
@@ -23,7 +24,13 @@
       <a href="{{ '/' | url }}" class="site-title">{{ site.title }}</a>
       <nav class="site-nav">
         {% for item in site.nav %}
-          <a href="{{ item.url | url }}"{% if item.url == page.url %} class="active"{% endif %}>{{ item.label }}</a>
+          {% set navActive = false %}
+          {% if item.url == '/' %}
+            {% set navActive = (page.url == '/' or page.url == '/index.html') %}
+          {% else %}
+            {% set navActive = (page.url == item.url) or (item.url != '/' and page.url.indexOf(item.url) == 0) %}
+          {% endif %}
+          <a href="{{ item.url | url }}"{% if navActive %} class="active"{% endif %}>{{ item.label }}</a>
         {% endfor %}
       </nav>
     </div>
@@ -43,35 +50,31 @@
     if (typeof window.gtag !== "function") return;
     window.gtag("event", name, props || {});
   }
-  function switchTab(tabs, name, options) {
-    tabs.querySelectorAll(".tab-labels button").forEach(function(b) {
-      b.classList.toggle("active", b.dataset.tab === name);
-    });
-    tabs.querySelectorAll(".tab-panel").forEach(function(p) {
-      p.classList.toggle("active", p.dataset.panel === name);
-    });
-    if (!options || options.track !== false) {
-      trackEvent("Tab Switch", { tab: name });
-    }
-  }
+  /** Legacy #hash tab links from the old single-page tabs → real URLs */
   (function() {
-    var hash = window.location.hash.replace("#", "");
-    if (hash) {
-      var tabs = document.querySelector(".drone-tabs");
-      if (tabs && tabs.querySelector('[data-tab="' + hash + '"]')) switchTab(tabs, hash, { track: false });
+    var hash = window.location.hash.replace(/^#/, "");
+    if (!hash) return;
+    var prefix = typeof window.__PATH_PREFIX__ === "string" ? window.__PATH_PREFIX__ : "";
+    var pathname = window.location.pathname;
+    var rel = pathname.startsWith(prefix) ? pathname.slice(prefix.length) : pathname;
+    if (!rel.startsWith("/")) rel = "/" + rel;
+    if (!rel.endsWith("/")) rel += "/";
+    var map = {
+      "/5-inch/": { build: "/5-inch/build-guide/", sample: "/5-inch/" },
+      "/5-inch-hd/": { build: "/5-inch-hd/build-guide/", sample: "/5-inch-hd/" },
+      "/7-inch/": { build: "/7-inch/build-guide/", sample: "/7-inch/", stiffness: "/7-inch/stiffness/" }
+    };
+    var targets = map[rel];
+    if (!targets || !targets[hash]) return;
+    var dest = prefix + targets[hash];
+    if (pathname !== dest) {
+      location.replace(dest + window.location.search);
     }
   })();
   document.addEventListener("click", function(e) {
     var trackable = e.target.closest("[data-track-event]");
     if (trackable) {
       trackEvent(trackable.dataset.trackEvent);
-    }
-    var btn = e.target.closest(".tab-labels button");
-    if (btn) {
-      var name = btn.dataset.tab;
-      switchTab(btn.closest(".drone-tabs"), name);
-      history.replaceState(null, "", "#" + name);
-      return;
     }
     var carouselBtn = e.target.closest(".carousel-btn");
     if (carouselBtn) {
