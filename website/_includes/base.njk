@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if title %}{{ title }} — {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  {% if site.analytics and site.analytics.googleAnalyticsId %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.googleAnalyticsId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "{{ site.analytics.googleAnalyticsId }}");
+  </script>
+  {% endif %}
 </head>
 <body>
   <header class="site-header">
@@ -24,26 +33,37 @@
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <p><a href="{{ site.repo }}">GitHub</a> · Open-source drone design · <a href="mailto:{{ site.contact }}">Contact</a> ({{ site.contact }})</p>
+      <p><a href="{{ site.repo }}" data-track-event="GitHub Click">GitHub</a> · Open-source drone design · <a href="mailto:{{ site.contact }}" data-track-event="Contact Click">Contact</a> ({{ site.contact }})</p>
     </div>
   </footer>
   <script>
-  function switchTab(tabs, name) {
+  function trackEvent(name, props) {
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", name, props || {});
+  }
+  function switchTab(tabs, name, options) {
     tabs.querySelectorAll(".tab-labels button").forEach(function(b) {
       b.classList.toggle("active", b.dataset.tab === name);
     });
     tabs.querySelectorAll(".tab-panel").forEach(function(p) {
       p.classList.toggle("active", p.dataset.panel === name);
     });
+    if (!options || options.track !== false) {
+      trackEvent("Tab Switch", { tab: name });
+    }
   }
   (function() {
     var hash = window.location.hash.replace("#", "");
     if (hash) {
       var tabs = document.querySelector(".drone-tabs");
-      if (tabs && tabs.querySelector('[data-tab="' + hash + '"]')) switchTab(tabs, hash);
+      if (tabs && tabs.querySelector('[data-tab="' + hash + '"]')) switchTab(tabs, hash, { track: false });
     }
   })();
   document.addEventListener("click", function(e) {
+    var trackable = e.target.closest("[data-track-event]");
+    if (trackable) {
+      trackEvent(trackable.dataset.trackEvent);
+    }
     var btn = e.target.closest(".tab-labels button");
     if (btn) {
       var name = btn.dataset.tab;
@@ -62,8 +82,10 @@
       var current = Math.round(Math.abs(currentTransform) / 100);
       if (carouselBtn.classList.contains("carousel-next")) {
         current = (current + 1) % slides.length;
+        trackEvent("Carousel Navigate", { direction: "next" });
       } else {
         current = (current - 1 + slides.length) % slides.length;
+        trackEvent("Carousel Navigate", { direction: "previous" });
       }
       track.style.transform = "translateX(-" + (current * 100) + "%)";
       dots.forEach(function(d, i) { d.classList.toggle("active", i === current); });
@@ -77,6 +99,7 @@
       var idx = Array.prototype.indexOf.call(dots, dot);
       track.style.transform = "translateX(-" + (idx * 100) + "%)";
       dots.forEach(function(d, i) { d.classList.toggle("active", i === idx); });
+      trackEvent("Carousel Navigate", { direction: "dot", slide: String(idx + 1) });
     }
   });
   </script>

@@ -7,6 +7,9 @@
     { "label": "5-inch HD racer", "url": "/5-inch-hd/" },
     { "label": "7-inch cruiser", "url": "/7-inch/" }
   ],
+  "analytics": {
+    "googleAnalyticsId": "G-4QHP22T2T9"
+  },
   "repo": "https://github.com/janherich/Spacedrone",
   "contact": "jan.herich@spacedelta3d.com"
 }
