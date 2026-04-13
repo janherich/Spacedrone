@@ -25,6 +25,14 @@
 <p class="build-photos-placeholder">Build photos coming soon — add images to <code>img/build/</code> and list them in <code>_data/builds.json</code>.</p>
 {% endif %}
 
+{% if build.description and build.description.length %}
+<div class="build-sample-description">
+  {% for para in build.description %}
+  <p>{{ para }}</p>
+  {% endfor %}
+</div>
+{% endif %}
+
 <h2>Components</h2>
 {% for group in build.components %}
 <h3>{{ group.category }}</h3>
@@ -34,10 +42,7 @@
   <li class="component-row">
     <span class="component-icon-wrap">{% lucideIcon meta.icon %}</span>
     <span class="component-kind">{{ meta.label }}</span>
-    <div class="component-main">
-      <span class="component-name">{{ item.name }}</span>
-      {% if item.detail %}<span class="component-detail">{{ item.detail }}</span>{% endif %}
-    </div>
+    <span class="component-name">{{ item.name }}</span>
   </li>
   {% endfor %}
 </ul>

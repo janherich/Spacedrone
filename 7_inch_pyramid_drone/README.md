@@ -135,13 +135,4 @@ Battery is mounted below the frame between 2 snap-on battery rails.
 Adjust their width to fit the chosen battery; you can also tape non-slip silicone strips on the rails for better grip.
 Battery securing strip is threaded just below the diagonal tube.
 
-### Betaflight configuration
-
-Make sure to correctly adjust board/gyro position as flipped because you mounted the board upside down, make sure to verify
-it's behaving correctly.
-Also make sure to correctly assign motors and their direction in the motors tab, especially when you didn't mark the motor wires
-when routing them internally through arm tubes.
-
-The quad flies very well on standard betaflight settings, even better with RPM filtering enabled and 7" Supafly preset.
-Due to the very low weight and low disc loading, set RPM for dynamic idle quite low (~12); otherwise low-throttle management is quite difficult and the quad feels very floaty.
-
+For Betaflight tuning notes, see **[Configuration](CONFIGURATION.md)**.

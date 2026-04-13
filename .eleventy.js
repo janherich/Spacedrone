@@ -31,6 +31,24 @@ module.exports = function (eleventyConfig) {
 
     // Rewrite internal doc links to website paths (include pathPrefix for GitHub Pages subpath)
     const p = pathPrefix;
+    const folder = sourcePath.split("/")[0];
+    const configPageByFolder = {
+      "5_inch_pyramid_drone": `${p}/5-inch/configuration/`,
+      "5_inch_hd_pyramid_drone": `${p}/5-inch-hd/configuration/`,
+      "7_inch_pyramid_drone": `${p}/7-inch/configuration/`,
+    };
+    const buildGuidePageByFolder = {
+      "5_inch_pyramid_drone": `${p}/5-inch/build-guide/`,
+      "5_inch_hd_pyramid_drone": `${p}/5-inch-hd/build-guide/`,
+      "7_inch_pyramid_drone": `${p}/7-inch/build-guide/`,
+    };
+    if (configPageByFolder[folder]) {
+      raw = raw.replace(/\]\(CONFIGURATION\.md\)/g, `](${configPageByFolder[folder]})`);
+    }
+    if (buildGuidePageByFolder[folder]) {
+      raw = raw.replace(/\]\(README\.md\)/g, `](${buildGuidePageByFolder[folder]})`);
+    }
+
     raw = raw.replace(/\]\(7_inch_pyramid_drone\/STIFFNESS_COMPARISON\.md\)/g, `](${p}/7-inch/stiffness/)`);
     raw = raw.replace(/\]\(\/7_inch_pyramid_drone\)/g, `](${p}/7-inch/)`);
     raw = raw.replace(/\]\(\/5_inch_pyramid_drone\)/g, `](${p}/5-inch/)`);

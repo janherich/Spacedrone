@@ -1,6 +1,7 @@
 <nav class="tab-labels drone-tab-nav" aria-label="Build sections">
   <a href="{{ droneTabBase | url }}"{% if activeTab == 'sample' %} class="active"{% endif %}>Sample Build</a>
   <a href="{{ (droneTabBase + 'build-guide/') | url }}"{% if activeTab == 'build' %} class="active"{% endif %}>Build Guide</a>
+  <a href="{{ (droneTabBase + 'configuration/') | url }}"{% if activeTab == 'config' %} class="active"{% endif %}>Configuration</a>
   {% if droneTabsStiffness %}
   <a href="{{ (droneTabBase + 'stiffness/') | url }}"{% if activeTab == 'stiffness' %} class="active"{% endif %}>Stiffness Comparison</a>
   {% endif %}
