@@ -10,6 +10,19 @@ const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "";
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("pathPrefix", pathPrefix);
+
+  // Inline Lucide SVG (website/assets/icons/lucide/<name>.svg) for component lists — stroke uses currentColor
+  eleventyConfig.addShortcode("lucideIcon", function (name) {
+    const safeName = String(name || "package").replace(/[^a-z0-9-]/gi, "");
+    const svgPath = path.join(projectRoot, "website", "assets", "icons", "lucide", `${safeName}.svg`);
+    if (!fs.existsSync(svgPath)) {
+      return `<!-- missing lucide icon: ${safeName} -->`;
+    }
+    let svg = fs.readFileSync(svgPath, "utf-8");
+    svg = svg.replace("<svg", '<svg class="component-icon-svg" aria-hidden="true" focusable="false"');
+    return svg;
+  });
+
   // Pull content from existing markdown files; imageBase prefixes relative img/ links for correct URLs
   eleventyConfig.addShortcode("contentFromMarkdown", function (sourcePath, imageBase = "") {
     const fullPath = path.join(projectRoot, sourcePath);

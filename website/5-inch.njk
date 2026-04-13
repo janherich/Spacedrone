@@ -9,13 +9,13 @@ permalink: /5-inch/
 
 <div class="drone-tabs">
   <div class="tab-labels">
-    <button class="active" data-tab="build">Build Guide</button>
-    <button data-tab="sample">Sample Build</button>
+    <button class="active" data-tab="sample">Sample Build</button>
+    <button data-tab="build">Build Guide</button>
   </div>
-  <div class="tab-panel active" data-panel="build">
-    {% contentFromMarkdown contentSource, imageBase %}
-  </div>
-  <div class="tab-panel" data-panel="sample">
+  <div class="tab-panel active" data-panel="sample">
     {% include "sample-build.njk" %}
+  </div>
+  <div class="tab-panel" data-panel="build">
+    {% contentFromMarkdown contentSource, imageBase %}
   </div>
 </div>

@@ -1,0 +1,16 @@
+{
+  "fc": { "label": "FC", "icon": "cpu" },
+  "motor": { "label": "Motor", "icon": "cog" },
+  "vtx": { "label": "VTX", "icon": "radio-tower" },
+  "camera": { "label": "Camera", "icon": "video" },
+  "rx": { "label": "RX", "icon": "radio-receiver" },
+  "antenna": { "label": "Antenna", "icon": "antenna" },
+  "battery": { "label": "Battery", "icon": "battery" },
+  "prop": { "label": "Prop", "icon": "fan" },
+  "print": { "label": "Print", "icon": "layers" },
+  "tube": { "label": "Tubing", "icon": "rectangle-horizontal" },
+  "hardware": { "label": "Hardware", "icon": "bolt" },
+  "gps": { "label": "GPS", "icon": "map-pin" },
+  "strap": { "label": "Strap", "icon": "ribbon" },
+  "accessory": { "label": "Accessory", "icon": "package" }
+}
