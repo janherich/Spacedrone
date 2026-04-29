@@ -135,4 +135,4 @@ Battery is mounted below the frame between 2 snap-on battery rails.
 Adjust their width to fit the chosen battery; you can also tape non-slip silicone strips on the rails for better grip.
 Battery securing strip is threaded just below the diagonal tube.
 
-For Betaflight tuning notes, see **[Configuration](CONFIGURATION.md)**.
+For Betaflight setup and flight video, see **[Configuration](CONFIGURATION.md)**.
